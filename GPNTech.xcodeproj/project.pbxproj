@@ -8,22 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		B526D33226878EFB0013972F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D33126878EFB0013972F /* AppDelegate.swift */; };
-		B526D33426878EFB0013972F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D33326878EFB0013972F /* SceneDelegate.swift */; };
 		B526D33626878EFB0013972F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D33526878EFB0013972F /* ViewController.swift */; };
-		B526D33926878EFB0013972F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B526D33726878EFB0013972F /* Main.storyboard */; };
 		B526D33B26878EFC0013972F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B526D33A26878EFC0013972F /* Assets.xcassets */; };
 		B526D33E26878EFC0013972F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B526D33C26878EFC0013972F /* LaunchScreen.storyboard */; };
+		B526D34626878FF20013972F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D34526878FF20013972F /* MainTabBarViewController.swift */; };
+		B526D348268790210013972F /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D347268790210013972F /* AuthViewController.swift */; };
+		B526D34A268790350013972F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D349268790350013972F /* Extension.swift */; };
+		B526D34C2687905F0013972F /* AuthAssertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D34B2687905F0013972F /* AuthAssertViewController.swift */; };
+		B526D34E268790BE0013972F /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D34D268790BE0013972F /* NotificationManager.swift */; };
+		B526D3502687914A0013972F /* WellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D34F2687914A0013972F /* WellViewController.swift */; };
+		B526D353268791680013972F /* WellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D352268791680013972F /* WellView.swift */; };
+		B526D355268791810013972F /* WellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D354268791810013972F /* WellCell.swift */; };
+		B526D357268791990013972F /* Well.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D356268791990013972F /* Well.swift */; };
+		B526D35A2687C90B0013972F /* WellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D3592687C90B0013972F /* WellDetail.swift */; };
+		B526D35C2687C9560013972F /* WellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35B2687C9560013972F /* WellDetailView.swift */; };
+		B526D35E2687C97E0013972F /* WellDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35D2687C97E0013972F /* WellDetailCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B526D32E26878EFB0013972F /* GPNTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPNTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B526D33126878EFB0013972F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B526D33326878EFB0013972F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B526D33526878EFB0013972F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B526D33826878EFB0013972F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B526D33A26878EFC0013972F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B526D33D26878EFC0013972F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B526D33F26878EFC0013972F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B526D34526878FF20013972F /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		B526D347268790210013972F /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		B526D349268790350013972F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		B526D34B2687905F0013972F /* AuthAssertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAssertViewController.swift; sourceTree = "<group>"; };
+		B526D34D268790BE0013972F /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B526D34F2687914A0013972F /* WellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellViewController.swift; sourceTree = "<group>"; };
+		B526D352268791680013972F /* WellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellView.swift; sourceTree = "<group>"; };
+		B526D354268791810013972F /* WellCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellCell.swift; sourceTree = "<group>"; };
+		B526D356268791990013972F /* Well.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Well.swift; sourceTree = "<group>"; };
+		B526D3592687C90B0013972F /* WellDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetail.swift; sourceTree = "<group>"; };
+		B526D35B2687C9560013972F /* WellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailView.swift; sourceTree = "<group>"; };
+		B526D35D2687C97E0013972F /* WellDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +77,40 @@
 			isa = PBXGroup;
 			children = (
 				B526D33126878EFB0013972F /* AppDelegate.swift */,
-				B526D33326878EFB0013972F /* SceneDelegate.swift */,
+				B526D34526878FF20013972F /* MainTabBarViewController.swift */,
+				B526D3582687C8F80013972F /* WellDetail */,
+				B526D351268791590013972F /* Well */,
+				B526D347268790210013972F /* AuthViewController.swift */,
+				B526D349268790350013972F /* Extension.swift */,
+				B526D34B2687905F0013972F /* AuthAssertViewController.swift */,
 				B526D33526878EFB0013972F /* ViewController.swift */,
-				B526D33726878EFB0013972F /* Main.storyboard */,
+				B526D34D268790BE0013972F /* NotificationManager.swift */,
 				B526D33A26878EFC0013972F /* Assets.xcassets */,
 				B526D33C26878EFC0013972F /* LaunchScreen.storyboard */,
 				B526D33F26878EFC0013972F /* Info.plist */,
 			);
 			path = GPNTech;
+			sourceTree = "<group>";
+		};
+		B526D351268791590013972F /* Well */ = {
+			isa = PBXGroup;
+			children = (
+				B526D34F2687914A0013972F /* WellViewController.swift */,
+				B526D352268791680013972F /* WellView.swift */,
+				B526D354268791810013972F /* WellCell.swift */,
+				B526D356268791990013972F /* Well.swift */,
+			);
+			path = Well;
+			sourceTree = "<group>";
+		};
+		B526D3582687C8F80013972F /* WellDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B526D3592687C90B0013972F /* WellDetail.swift */,
+				B526D35D2687C97E0013972F /* WellDetailCell.swift */,
+				B526D35B2687C9560013972F /* WellDetailView.swift */,
+			);
+			path = WellDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +172,6 @@
 			files = (
 				B526D33E26878EFC0013972F /* LaunchScreen.storyboard in Resources */,
 				B526D33B26878EFC0013972F /* Assets.xcassets in Resources */,
-				B526D33926878EFB0013972F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +182,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B526D34A268790350013972F /* Extension.swift in Sources */,
+				B526D357268791990013972F /* Well.swift in Sources */,
+				B526D355268791810013972F /* WellCell.swift in Sources */,
+				B526D348268790210013972F /* AuthViewController.swift in Sources */,
+				B526D34626878FF20013972F /* MainTabBarViewController.swift in Sources */,
+				B526D35C2687C9560013972F /* WellDetailView.swift in Sources */,
 				B526D33626878EFB0013972F /* ViewController.swift in Sources */,
+				B526D35A2687C90B0013972F /* WellDetail.swift in Sources */,
+				B526D34E268790BE0013972F /* NotificationManager.swift in Sources */,
+				B526D34C2687905F0013972F /* AuthAssertViewController.swift in Sources */,
+				B526D3502687914A0013972F /* WellViewController.swift in Sources */,
 				B526D33226878EFB0013972F /* AppDelegate.swift in Sources */,
-				B526D33426878EFB0013972F /* SceneDelegate.swift in Sources */,
+				B526D35E2687C97E0013972F /* WellDetailCell.swift in Sources */,
+				B526D353268791680013972F /* WellView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B526D33726878EFB0013972F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B526D33826878EFB0013972F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B526D33C26878EFC0013972F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
