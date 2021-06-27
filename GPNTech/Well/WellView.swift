@@ -44,6 +44,13 @@ class WellView: UIView {
         table.estimatedRowHeight = 48
         return table
     }()
+    
+    let logoImageView: UIImageView = {
+       let iv = UIImageView(image: UIImage(named: "logo"))
+        iv.translatesAutoresizingMaskIntoConstraints = false
+        iv.contentMode = .scaleAspectFit
+        return iv
+    }()
         
     
     override init(frame: CGRect) {
@@ -61,6 +68,7 @@ class WellView: UIView {
         addSubview(searchTextfield)
         addSubview(titleLabel)
         addSubview(wellTableView)
+        addSubview(logoImageView)
         createConstaints()
         backgroundColor = .white
         
@@ -84,6 +92,12 @@ class WellView: UIView {
             wellTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             wellTableView.bottomAnchor.constraint(equalTo: bottomAnchor),
             
+            logoImageView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            logoImageView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
+            logoImageView.heightAnchor.constraint(equalToConstant: 25),
+            logoImageView.widthAnchor.constraint(equalToConstant: 25),
+
+
             
 
         ])
