@@ -80,6 +80,29 @@ class CheckDetailViewController: UIViewController {
     }()
 
 
+    let editButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1)
+        button.layer.cornerRadius = 12
+        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.lightGray, for: .highlighted)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Корректировать", for: .normal)
+        return button
+    }()
+
+    let enterButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1)
+        button.layer.cornerRadius = 12
+        button.setTitleColor(.white, for: .normal)
+        button.setTitleColor(.lightGray, for: .highlighted)
+        button.titleLabel?.font = .boldSystemFont(ofSize: 18)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.setTitle("Сформировать акт", for: .normal)
+        return button
+    }()
 
     
     override func viewDidLoad() {
@@ -96,6 +119,9 @@ class CheckDetailViewController: UIViewController {
         view.addSubview(groupLabel)
         view.addSubview(stepLabel)
         view.addSubview(pressureLabel)
+        view.addSubview(editButton)
+        view.addSubview(enterButton)
+        enterButton.addTarget(self, action: #selector(showAlert), for: .touchUpInside)
 
 
         NSLayoutConstraint.activate([
@@ -133,9 +159,26 @@ class CheckDetailViewController: UIViewController {
             pressureLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             pressureLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             pressureLabel.heightAnchor.constraint(equalToConstant: 20),
+            
+            enterButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20),
+            enterButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            enterButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            enterButton.heightAnchor.constraint(equalToConstant: 50),
+            
+            editButton.bottomAnchor.constraint(equalTo: enterButton.topAnchor, constant: -16),
+            editButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
+            editButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
+            editButton.heightAnchor.constraint(equalToConstant: 50),
+
 
         
         ])
     }
     
+    @objc func showAlert() {
+        let alert = UIAlertController(title: "СПО", message: "Акт сформирован и отправлен", preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default))
+        
+        present(alert, animated: true)
+    }
 }

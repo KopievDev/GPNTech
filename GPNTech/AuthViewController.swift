@@ -117,7 +117,7 @@ class AuthViewController: UIViewController {
             enterButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
             enterButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
             enterButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -34),
-            enterButton.heightAnchor.constraint(equalToConstant: 44)
+            enterButton.heightAnchor.constraint(equalToConstant: 50)
             
         ])
     }

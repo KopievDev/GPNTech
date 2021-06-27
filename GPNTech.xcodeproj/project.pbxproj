@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B526D33226878EFB0013972F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D33126878EFB0013972F /* AppDelegate.swift */; };
-		B526D33626878EFB0013972F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D33526878EFB0013972F /* ViewController.swift */; };
 		B526D33B26878EFC0013972F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B526D33A26878EFC0013972F /* Assets.xcassets */; };
 		B526D33E26878EFC0013972F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B526D33C26878EFC0013972F /* LaunchScreen.storyboard */; };
 		B526D34626878FF20013972F /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D34526878FF20013972F /* MainTabBarViewController.swift */; };
@@ -24,12 +23,12 @@
 		B526D35C2687C9560013972F /* WellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35B2687C9560013972F /* WellDetailView.swift */; };
 		B526D35E2687C97E0013972F /* WellDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35D2687C97E0013972F /* WellDetailCell.swift */; };
 		B531F2C926884102006376C6 /* CheckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531F2C826884102006376C6 /* CheckDetailViewController.swift */; };
+		B531F2CC268850B1006376C6 /* ActViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531F2CB268850B1006376C6 /* ActViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B526D32E26878EFB0013972F /* GPNTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPNTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B526D33126878EFB0013972F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B526D33526878EFB0013972F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B526D33A26878EFC0013972F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B526D33D26878EFC0013972F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B526D33F26878EFC0013972F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +45,7 @@
 		B526D35B2687C9560013972F /* WellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailView.swift; sourceTree = "<group>"; };
 		B526D35D2687C97E0013972F /* WellDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailCell.swift; sourceTree = "<group>"; };
 		B531F2C826884102006376C6 /* CheckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDetailViewController.swift; sourceTree = "<group>"; };
+		B531F2CB268850B1006376C6 /* ActViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 				B526D347268790210013972F /* AuthViewController.swift */,
 				B526D349268790350013972F /* Extension.swift */,
 				B526D34B2687905F0013972F /* AuthAssertViewController.swift */,
-				B526D33526878EFB0013972F /* ViewController.swift */,
+				B531F2CB268850B1006376C6 /* ActViewController.swift */,
 				B526D34D268790BE0013972F /* NotificationManager.swift */,
 				B526D33A26878EFC0013972F /* Assets.xcassets */,
 				B526D33C26878EFC0013972F /* LaunchScreen.storyboard */,
@@ -200,8 +200,8 @@
 				B526D348268790210013972F /* AuthViewController.swift in Sources */,
 				B526D34626878FF20013972F /* MainTabBarViewController.swift in Sources */,
 				B526D35C2687C9560013972F /* WellDetailView.swift in Sources */,
-				B526D33626878EFB0013972F /* ViewController.swift in Sources */,
 				B526D35A2687C90B0013972F /* WellDetail.swift in Sources */,
+				B531F2CC268850B1006376C6 /* ActViewController.swift in Sources */,
 				B526D34E268790BE0013972F /* NotificationManager.swift in Sources */,
 				B526D34C2687905F0013972F /* AuthAssertViewController.swift in Sources */,
 				B526D3502687914A0013972F /* WellViewController.swift in Sources */,

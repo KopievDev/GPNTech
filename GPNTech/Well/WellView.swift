@@ -32,7 +32,7 @@ class WellView: UIView {
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Скважены"
+        label.text = "Скважины"
         return label
     }()
         

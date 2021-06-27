@@ -20,18 +20,15 @@ class MainTabBarViewController: UITabBarController, UITabBarControllerDelegate {
         delegate = self
         
 
-//        let targetVC = TargetViewController()
-//        let ratingVC = RatingViewController()
-//        let chatsVC = ChatsViewController()
+
         let catalogVC = WellViewController()
-//        let profileVC = ProfileViewController()
-//
+        let actVC = ActViewController()
         let catalogNavigation = UINavigationController(rootViewController: catalogVC)
 //        let chatNavigation = UINavigationController(rootViewController: chatsVC)
 
         UINavigationBar.appearance().tintColor = .black
         
-        viewControllers = [catalogNavigation]
+        viewControllers = [catalogNavigation,actVC]
         selectedIndex = 0
         tabBar.tintColor = UIColor(red: 0.278, green: 0.596, blue: 0.8, alpha: 1)
         tabBar.unselectedItemTintColor =         UIColor(red: 0.764, green: 0.854, blue: 0.917, alpha: 1)

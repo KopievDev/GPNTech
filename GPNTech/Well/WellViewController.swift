@@ -11,7 +11,7 @@ class WellViewController: UIViewController {
     
     init() {
           super.init(nibName: nil, bundle: nil)
-        tabBarItem = UITabBarItem(title: "Скважены", image: UIImage(systemName: "list.triangle"), tag: 2)
+        tabBarItem = UITabBarItem(title: "Скважины", image: UIImage(systemName: "list.triangle"), tag: 2)
       }
     
     required init?(coder: NSCoder) {
