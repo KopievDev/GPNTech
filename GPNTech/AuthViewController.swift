@@ -10,14 +10,6 @@ import UIKit
 class AuthViewController: UIViewController {
 
     
-    init() {
-        super.init(nibName: nil, bundle: nil)
-        tabBarItem = UITabBarItem(title: "auth", image: #imageLiteral(resourceName: "serb"), tag: 5)
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewWillAppear(_ animated: Bool) {
           super.viewWillAppear(animated)
@@ -45,7 +37,7 @@ class AuthViewController: UIViewController {
         textfield.setRightIcon(UIImage(named: "delete"))
         textfield.backgroundColor = UIColor(red: 0.957, green: 0.996, blue: 0.965, alpha: 1)
         textfield.layer.borderWidth = 0.6
-        textfield.layer.borderColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1).cgColor
+        textfield.layer.borderColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1).cgColor
         textfield.attributedPlaceholder = NSAttributedString(string: "+7 (999) 999 99-99", attributes: [NSAttributedString.Key.foregroundColor: UIColor(red: 0.475, green: 0.475, blue: 0.478, alpha: 1)])
         textfield.delegate = self
         return textfield
@@ -53,7 +45,7 @@ class AuthViewController: UIViewController {
     
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = .black
+        label.textColor = .white
         label.textAlignment = .left
         label.font = UIFont.boldSystemFont(ofSize: 22)
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -63,8 +55,8 @@ class AuthViewController: UIViewController {
     
     let enterButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1)
-        button.layer.cornerRadius = 15
+        button.backgroundColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1)
+        button.layer.cornerRadius = 12
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.lightGray, for: .highlighted)
         button.titleLabel?.font = .boldSystemFont(ofSize: 18)
@@ -72,15 +64,28 @@ class AuthViewController: UIViewController {
         button.setTitle("Получить код", for: .normal)
         return button
     }()
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        enterButton.addTarget(self, action: #selector(goNext), for: .touchUpInside)
+        
+        
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [
+          UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 0.74).cgColor,
+          UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 0).cgColor
+        ]
+        gradientLayer.locations = [0, 1]
+        gradientLayer.startPoint = CGPoint(x: 0.25, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 0.75, y: 0.5)
+        gradientLayer.transform = CATransform3DMakeAffineTransform(CGAffineTransform(a: 0, b: 0.81, c: -0.81, d: 0.01, tx: 0.9, ty: -0.01))
+        gradientLayer.frame = view.frame
+        
+        view.layer.addSublayer(gradientLayer)
         view.addSubview(titleLabel)
         view.addSubview(phoneTextfield)
         view.addSubview(enterButton)
-        enterButton.addTarget(self, action: #selector(goNext), for: .touchUpInside)
-        
         createConstraints()
     }
     

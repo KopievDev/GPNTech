@@ -51,7 +51,7 @@ class AuthAssertViewController: UIViewController {
         label.text = "0"
         label.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         label.layer.borderWidth = 1
-        label.layer.borderColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1).cgColor
+        label.layer.borderColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1).cgColor
         label.layer.cornerRadius = 8
         return label
     }()
@@ -65,7 +65,7 @@ class AuthAssertViewController: UIViewController {
         label.text = "0"
         label.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         label.layer.borderWidth = 1
-        label.layer.borderColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1).cgColor
+        label.layer.borderColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1).cgColor
         label.layer.cornerRadius = 8
         return label
     }()
@@ -79,7 +79,7 @@ class AuthAssertViewController: UIViewController {
         label.text = "0"
         label.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         label.layer.borderWidth = 1
-        label.layer.borderColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1).cgColor
+        label.layer.borderColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1).cgColor
         label.layer.cornerRadius = 8
         return label
     }()
@@ -92,7 +92,7 @@ class AuthAssertViewController: UIViewController {
         label.text = "0"
         label.backgroundColor = UIColor(red: 0.98, green: 0.98, blue: 0.98, alpha: 1)
         label.layer.borderWidth = 1
-        label.layer.borderColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1).cgColor
+        label.layer.borderColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1).cgColor
         label.layer.cornerRadius = 8
         return label
     }()
@@ -100,8 +100,8 @@ class AuthAssertViewController: UIViewController {
     
     let enterButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1)
-        button.layer.cornerRadius = 15
+        button.backgroundColor = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1)
+        button.layer.cornerRadius = 12
         button.setTitleColor(.white, for: .normal)
         button.setTitleColor(.lightGray, for: .highlighted)
         button.titleLabel?.font = .boldSystemFont(ofSize: 18)
@@ -113,7 +113,7 @@ class AuthAssertViewController: UIViewController {
     
     let indicator: UIActivityIndicatorView = {
         let ind = UIActivityIndicatorView(style: .large)
-        ind.color = UIColor(red: 0.208, green: 0.722, blue: 0.314, alpha: 1)
+        ind.color = UIColor(red: 0, green: 0.447, blue: 0.729, alpha: 1)
         ind.hidesWhenStopped = true
         ind.translatesAutoresizingMaskIntoConstraints = false
         return ind
@@ -174,7 +174,11 @@ class AuthAssertViewController: UIViewController {
     }
     
     @objc func goToHome() {
-        dismiss(animated: true)
+        dismiss(animated: true) { [weak self]  in
+            let target = MainTabBarViewController()
+            self?.present(target, animated: true)
+        }
+
     }
     
     func createConstraints() {

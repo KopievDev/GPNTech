@@ -14,6 +14,7 @@ class WellDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(wellView)
+        navigationItem.leftBarButtonItem?.title = "Назад"
         wellDetailArray.append("Секции ЭЦН")
         wellDetailArray.append("Секции ЭЦН")
         wellDetailArray.append("Секции ЭЦН")
@@ -48,13 +49,9 @@ extension WellDetailViewController: UITableViewDataSource {
 extension WellDetailViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let detailVC = CatalogDetailViewController()
-//        detailVC.titleLabel = catalogArray[indexPath.row]
-//        detailVC.catalogView.timeLabel.text = catalogView.timeLabel.text
-//        if SaleTimer.shared.timerIsActive {
-//            detailVC.timer(on: true)
-//        }
-//        navigationController?.pushViewController(detailVC, animated: true)
+        let detailVC = CheckDetailViewController()
+        detailVC.title = wellDetailArray[indexPath.row]
+        navigationController?.pushViewController(detailVC, animated: true)
     }
 }
 

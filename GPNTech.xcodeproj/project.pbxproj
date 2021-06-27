@@ -23,6 +23,7 @@
 		B526D35A2687C90B0013972F /* WellDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D3592687C90B0013972F /* WellDetail.swift */; };
 		B526D35C2687C9560013972F /* WellDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35B2687C9560013972F /* WellDetailView.swift */; };
 		B526D35E2687C97E0013972F /* WellDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B526D35D2687C97E0013972F /* WellDetailCell.swift */; };
+		B531F2C926884102006376C6 /* CheckDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B531F2C826884102006376C6 /* CheckDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		B526D3592687C90B0013972F /* WellDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetail.swift; sourceTree = "<group>"; };
 		B526D35B2687C9560013972F /* WellDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailView.swift; sourceTree = "<group>"; };
 		B526D35D2687C97E0013972F /* WellDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WellDetailCell.swift; sourceTree = "<group>"; };
+		B531F2C826884102006376C6 /* CheckDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				B526D33126878EFB0013972F /* AppDelegate.swift */,
 				B526D34526878FF20013972F /* MainTabBarViewController.swift */,
+				B531F2CA26884106006376C6 /* CheckDetail */,
 				B526D3582687C8F80013972F /* WellDetail */,
 				B526D351268791590013972F /* Well */,
 				B526D347268790210013972F /* AuthViewController.swift */,
@@ -111,6 +114,14 @@
 				B526D35B2687C9560013972F /* WellDetailView.swift */,
 			);
 			path = WellDetail;
+			sourceTree = "<group>";
+		};
+		B531F2CA26884106006376C6 /* CheckDetail */ = {
+			isa = PBXGroup;
+			children = (
+				B531F2C826884102006376C6 /* CheckDetailViewController.swift */,
+			);
+			path = CheckDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B526D34A268790350013972F /* Extension.swift in Sources */,
+				B531F2C926884102006376C6 /* CheckDetailViewController.swift in Sources */,
 				B526D357268791990013972F /* Well.swift in Sources */,
 				B526D355268791810013972F /* WellCell.swift in Sources */,
 				B526D348268790210013972F /* AuthViewController.swift in Sources */,
